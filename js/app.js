@@ -4,7 +4,7 @@ $(document).ready(function() {
   $.getJSON(SJSON, function(data) {
   //parses out each individual entry into the table
     $.each(data.result.fArray, function(i,f) {
-      var tblRow = "<tr>" + "<td>" + f.fStr + "</td>" + "<td>" + "<td>" + f.fHeader + "<td>" + "<td>" + "</tr>"
+      var tblRow = "<tr>" + "<td>" + f.fStr + "</td>" + "<td>" + f.fType + "</td>" + "</tr>"
         $(tblRow).appendTo('#SJData tbody');
     })
   })
